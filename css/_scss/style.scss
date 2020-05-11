@@ -7,3 +7,53 @@ $color4: #E8E8E8;
 h1{
     color: $color3;
 }
+#header{
+
+
+    #navigation{
+        width: 100%;
+        min-height: 70px;
+        background: $color2;
+        opacity: 0.8;
+
+        #icon{
+            width: 26px;
+        }
+
+        
+        #menuNavbar{
+            padding-left: 55%;
+            .nav-link{
+                color: $color1;
+                font-size: 1em;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 25px 20px;
+
+                &:hover,&:focus,&:active{
+                    border: 1px solid $color1;
+                    background: transparent;
+                }
+            }
+
+            
+            .dropdown-menu{
+                background: $color2;
+                .dropdown-item{
+                    color: $color1;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    &:hover,&focus,&:active{
+                        border: 1px solid $color1;
+                        background: transparent;
+                    }
+
+                }
+            }
+
+         }
+            
+        
+    }
+    
+}
