@@ -55,5 +55,20 @@ h1{
             
         
     }
+    #carouseGeral{
+        height: 450px;
+        #carouImg1{
+            background: url("../../img/img1.jpeg");
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
+        #carouImg2{
+            @extend #carouImg1;
+            background: url("../../img/img2.jpeg");
+        }
+    }
+
     
 }

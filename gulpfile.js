@@ -28,7 +28,7 @@ gulp.task('sass', () => {
       .pipe(concat('style.min.css'))
       .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
       .pipe(gulp.dest('./css'))
-      .pipe(browserSync.stream())
+      .pipe(browserSync.reload({stream:true}))
 
    });
 
@@ -37,7 +37,7 @@ gulp.task('sass', () => {
        .pipe(concat('js.min.js'))
        .pipe(uglify())
        .pipe(gulp.dest('./js'))
-       .pipe(browserSync.stream());
+       .pipe(browserSync.reload({stream:true}));
    });
 
   
@@ -49,8 +49,9 @@ gulp.task('sass', () => {
 
 
     gulp.task('default',gulp.parallel('browserSync','sass','js'), function(){
-    gulp.watch('./js/_js/**/*.js', ['js']);
+    gulp.watch('./js/_js/**/*.js', gulp.series('js'));
     gulp.watch('./css/_scss/**/*.scss', ['sass']);
+    gulp.watch("./*.html").on('change',browserSync.reload);
 
 
    });
