@@ -15,7 +15,7 @@ h1{
         width: 100%;
         min-height: 70px;
         background: $color2;
-        opacity: 0.8;
+        opacity: 1;
 
         #icon{
             width: 26px;
@@ -39,7 +39,6 @@ h1{
 
             
             .dropdown-menu{
-                z-index: 99;
                
                 background: $color2;
                 .dropdown-item{
