@@ -9,8 +9,9 @@ h1{
 }
 #header{
 
-
+    z-index: 99;
     #navigation{
+     
         width: 100%;
         min-height: 70px;
         background: $color2;
@@ -38,6 +39,8 @@ h1{
 
             
             .dropdown-menu{
+                z-index: 99;
+               
                 background: $color2;
                 .dropdown-item{
                     color: $color1;
@@ -53,22 +56,24 @@ h1{
 
          }
             
+         
         
     }
-    #carouseGeral{
-        height: 450px;
-        #carouImg1{
-            background: url("../../img/img1.jpeg");
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            background-repeat: no-repeat;
-        }
-        #carouImg2{
-            @extend #carouImg1;
-            background: url("../../img/img2.jpeg");
-        }
-    }
 
+
+
+   
     
+}
+
+#sectionCarousel{
+    z-index: 90;
+    width: 100%;
+    height: 50em;
+    overflow: hidden;
+
+    .textCarousel{
+
+        margin-bottom: 35em;
+    }
 }
