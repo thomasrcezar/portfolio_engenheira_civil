@@ -4,76 +4,120 @@ $color3: #52658f;
 $color4: #E8E8E8;
 
 
-h1{
+h1 {
     color: $color3;
 }
-#header{
-    
-   
-    #navigation{
-        z-index: 2;
-        width: 100%;
-        min-height: 70px;
-        background: $color2;
-        opacity: 1;
 
-        #icon{
-            width: 26px;
-        }
+body {
 
-        
-        #menuNavbar{
-            padding-left: 55%;
-            .nav-link{
-                color: $color1;
-                font-size: 1em;
-                font-weight: bold;
-                text-transform: uppercase;
-                padding: 25px 20px;
+    background: $color1;
 
-                &:hover,&:focus,&:active{
-                    border: 1px solid $color1;
-                    background: transparent;
-                }
+    #header {
+
+
+        #navigation {
+            z-index: 2;
+            width: 100%;
+            min-height: 70px;
+            background: $color2;
+            opacity: 1;
+
+            #icon {
+                width: 26px;
             }
 
-            
-            .dropdown-menu{
-               
-                background: $color2;
-                .dropdown-item{
+
+            #menuNavbar {
+                padding-left: 55%;
+
+                .nav-link {
                     color: $color1;
+                    font-size: 1em;
                     font-weight: bold;
                     text-transform: uppercase;
-                    &:hover,&focus,&:active{
+                    padding: 25px 20px;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
                         border: 1px solid $color1;
                         background: transparent;
                     }
-
                 }
+
+
+                .dropdown-menu {
+
+                    background: $color2;
+
+                    .dropdown-item {
+                        color: $color1;
+                        font-weight: bold;
+                        text-transform: uppercase;
+
+                        &:hover,
+                        &focus,
+                        &:active {
+                            border: 1px solid $color1;
+                            background: transparent;
+                        }
+
+                    }
+                }
+
             }
 
-         }
-            
-         
+
+
+        }
+
+
+
+
+
+    }
+
+    #sectionCarousel {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 50em;
+        overflow: hidden;
+        margin-bottom: 3rem;
+
+        .textCarousel {
+
+            margin-bottom: 35em;
+        }
+    }
+
+    #apresent {
+        background: $color4;
+        margin-bottom: 3em;
+
+        #Pessoa1 {
+
+            width: 100%;
+            height: 25em;
+
+        }
+
+    }
+
+    #fraseMotivacional {
+
         
+        background: $color2;
+        min-height: 250px;
+        text-align: center;
+        
+
+        h1 {
+
+            color: $color4;
+            padding-top: 1em;
+        }
+
     }
 
-
-
-   
-    
-}
-
-#sectionCarousel{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 50em;
-    overflow: hidden;
-
-    .textCarousel{
-
-        margin-bottom: 35em;
-    }
 }
