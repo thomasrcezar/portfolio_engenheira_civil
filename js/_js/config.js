@@ -1,5 +1,5 @@
 function setTitle(){
-    let text = {'title':'Engenheira Brígida'};
+    let text = {'title':'Super Engenheira'};
 
     document.title = text.title;
 

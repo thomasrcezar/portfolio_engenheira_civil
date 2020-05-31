@@ -81,13 +81,27 @@ body {
         position: relative;
         z-index: 1;
         width: 100%;
-        height: 50em;
         overflow: hidden;
         margin-bottom: 3rem;
 
         .textCarousel {
 
-            margin-bottom: 35em;
+            margin-bottom: 25em;
+
+            .titleC{
+               
+                font-size: 3.5em;
+            }
+
+            .descC{
+
+                margin-top: 30px;
+                margin-bottom: 40px;
+                
+                font-size: 1.5em;
+            }
+
+            
         }
     }
 
@@ -100,6 +114,11 @@ body {
             width: 100%;
             height: 25em;
 
+        }
+
+        .textApresent{
+
+            margin-top: 1.5em;
         }
 
     }
@@ -118,6 +137,25 @@ body {
             padding-top: 1em;
         }
 
+    }
+
+    #sContantos{
+
+        margin-top: 1.5em;
+        .iconesC{
+
+            width: 32px;
+            
+            &:hover,&:focus,&:active{
+
+                transform: translateY(-5px);
+                transition: 500ms;
+
+            }
+            
+
+
+        }
     }
 
 }
